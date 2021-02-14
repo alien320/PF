@@ -8,7 +8,7 @@ int main()
 	srand(time(NULL));
 
 	int random_number, your_number, attempts;
-	random_number = rand() % 1000;
+	random_number = rand() % 100;
 
 	printf("Угадайте число, которое сгенерировал компьютер: ");
 
