@@ -1,27 +1,25 @@
 ﻿#include <stdio.h>
 #include <locale.h>
 
-int num()
+void reorganize()
 {
 	int n;
 	scanf_s("%d", &n);
 
 	if (n > 0)
 	{
-		num();
+		reorganize();
 		printf("%d ", n);
 	}
-	else
-	{
-		printf("0 ");
-	}
+	else printf("0 ");
 }
 
 void main()
 {
 	setlocale(LC_ALL, "ru");
 
-	printf("Введите последовательность чисел: ");
-	num();
+	printf(" Введите последовательность чисел: ");
+
+	reorganize();
 	printf("\n");
 }

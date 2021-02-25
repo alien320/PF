@@ -3,13 +3,11 @@
 
 char compare(int x, int y)
 {
-	char sign;
+	if (x < y) return '<';
 
-	if (x < y) sign = '<';
-	else if (x > y) sign = '>';
-	else sign = '=';
+	else if (x > y) return '>';
 
-	return sign;
+	else return '=';
 }
 
 void main()
